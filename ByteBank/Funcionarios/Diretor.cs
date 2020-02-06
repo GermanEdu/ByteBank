@@ -6,12 +6,10 @@ using System.Threading.Tasks;
 
 namespace ByteBank.Funcionarios
 {
-     public class Diretor
+    // : o diretor herda da classe Funcionario seus atrubutos, no caso é uma classe devivada da classe funcionario  
+    public class Diretor : Funcionario
     {
 
-        public string Nome { get; set; }
-        public string CPF { get; set; }
-        public double Salario { get; set; }
 
         public double GetBonificacao()
         {

@@ -16,6 +16,8 @@ namespace ByteBank
 
             gerenciador.Registrar(Algum);
 
+            Funcionario pedro = new Diretor();
+
 
             Diretor Eduardo = new Diretor();
             Eduardo.Nome = "Eduardo";
