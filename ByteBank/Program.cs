@@ -25,6 +25,12 @@ namespace ByteBank
             gerenciador.Registrar(Eduardo);
 
 
+            Funcionario eduardoteste = Eduardo;
+
+            Console.WriteLine("Bonificação de uma referencia diretor: " + Eduardo.GetBonificacao());
+            Console.WriteLine("Bonificação de uma referencia funcionario: " + eduardoteste.GetBonificacao());
+
+
             Console.WriteLine(Algum.Nome);
             Console.WriteLine(Algum.GetBonificacao());
             Console.WriteLine();
