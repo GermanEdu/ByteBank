@@ -6,16 +6,16 @@ using System.Threading.Tasks;
 
 namespace ByteBank.Funcionarios
 {
-    public class Funcionario
+    public abstract class Funcionario
     {
-        public static int TotalDeFuncionarios { get; private set; } 
+        public static int TotalDeFuncionarios { get; private set; }
 
         public string Nome { get; set; }
         public string CPF { get; private set; }
         public double Salario { get; protected set; }
 
 
-        
+
 
 
         // construtor que soma a quantidade de funcionarios 
@@ -29,19 +29,13 @@ namespace ByteBank.Funcionarios
 
             TotalDeFuncionarios++;
         }
+    
 
-        public virtual void AumentarSalario()
-        {
-            Salario =  Salario + (Salario * 0.1);
+        public abstract void AumentarSalario();
 
-        }
 
-        public virtual double GetBonificacao()
-        {
-
-            return Salario * 0.10;
-        }
-
+        public abstract double GetBonificacao();
+     
 
 
     }
