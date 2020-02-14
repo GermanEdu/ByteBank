@@ -10,7 +10,7 @@ namespace ByteBank.Sistemas
    public  class SistemaLogin
     {
 
-        public bool Logar(Diretor funcionario, string senha)
+        public bool Logar(IAutenticavel funcionario, string senha)
         {
             bool usuarioAutenticado = funcionario.Autenticar(senha);
             if (usuarioAutenticado)

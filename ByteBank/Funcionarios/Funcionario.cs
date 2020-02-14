@@ -17,7 +17,6 @@ namespace ByteBank.Funcionarios
 
 
 
-
         // construtor que soma a quantidade de funcionarios 
         public Funcionario(double salario, string cpf)
         {
@@ -29,7 +28,7 @@ namespace ByteBank.Funcionarios
 
             TotalDeFuncionarios++;
         }
-    
+
 
         public abstract void AumentarSalario();
 

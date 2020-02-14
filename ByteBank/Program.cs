@@ -64,13 +64,15 @@ namespace ByteBank
             Roberta.Nome = "Roberta";
             Roberta.Senha = "123";
 
-           // Funcionario Eduardo = new Funcionario(1500,"222.145.156-78");
+            ParceiroComercial parceiro = new ParceiroComercial();
+            parceiro.Senha = "1234";
 
 
 
             sistemalogin.Logar(Roberta, "123");
+            sistemalogin.Logar(Roberta, "123");
 
-            sistemalogin.Logar(Roberta, "abc");
+            sistemalogin.Logar(parceiro, "1234");
 
 
 

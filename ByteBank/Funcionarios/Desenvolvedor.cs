@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ByteBank.Sistemas;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace ByteBank.Funcionarios
 {
-   public  class Desenvolvedor : Funcionario 
+   public  class Desenvolvedor : FuncionarioAutenticavel
     {
         public Desenvolvedor(string cpf) : base(3000, cpf)
         {

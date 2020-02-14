@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ByteBank.Sistemas;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -7,22 +8,16 @@ using System.Threading.Tasks;
 namespace ByteBank.Funcionarios
 {
     // : o diretor herda da classe Funcionario seus atributos, no caso é uma classe devivada da classe funcionario  
-    public class Diretor : Funcionario
+    public class Diretor : FuncionarioAutenticavel
     {
-        public string Senha { get; set; }
+       
 
         public Diretor(string cpf) : base(5000, cpf)
         {
             Console.WriteLine("Criando Diretor: ");
         }
 
-        public bool Autenticar(string senha)
-        {
-            return this.Senha == senha;
-            
-        } 
-
-
+  
         public override void  AumentarSalario()
         {
 
